@@ -1,0 +1,40 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Treidor-Registro</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/Registro1.css">
+    </head>
+    <body class="hidden">
+        <div class="centrado" id="onload">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div> 
+
+        <section class="contenedor logo">
+            <div class="logo">
+                <a href="WikiCocinando.html"><img src="imagenes/logo_traidor.png" alt=""></a>
+            </div>
+        </section>
+        <form action="" method="POST" id="forn">
+            <div class="form">
+                <h1>Registro Usuario</h1>
+                
+                    {% csrf_token %}
+        
+                    <table>
+                        {{ form.as_table }}
+                    </table>
+        
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Registrar">
+
+            </div>
+        </form>
+
+        <script type='text/javascript' src='{% static "js/jquerry.js" %}'></script>
+        <script type='text/javascript' src='{% static "js/main.js" %}'></script>
+    </body>
+</html>

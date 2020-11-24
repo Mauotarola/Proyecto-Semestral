@@ -1,0 +1,127 @@
+{% load static%}
+<html>
+    <head>
+        <title>El Traidor-Desayunos</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="static/css/StylosVariedades1.css">
+        <script src="https://kit.fontawesome.com/38851b06af.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="hidden">
+        <div class="centrado" id="onload">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div> 
+        
+            <header>
+                <nav id="nav" class="nav1">
+                    <div class="contenedor-nav">
+                        <div class="logo">
+                            <a href="{% url 'menu' %}"><img src="media/Galeria/logo_traidor.png" alt=""></a>
+                        </div>
+                        <div class="enlaces" id="enlaces">
+                            <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                            <a href="pagina2.html">Informacion</a>
+                            <a href="pagina3.html">Iniciar seccion</a>
+                            <a href="{% url 'registro' %}">Registrarse</a>
+                        </div>
+                        <div class="icono" id="open"> 
+                           <span>&#9776;</span>
+                        </div> 
+                    </div>
+                </nav>
+                <div class="textos">
+                    <h1>El Traidor</h1>
+                    <h2>La mejores resetas para el hogar</h2>
+                </div>
+                
+            </header>
+    
+            <main>
+                <section class="team contenedor" id="equipo">
+                    <h3>Nuestras variedades en Desayuno</h3>
+                    <p class="after">La comida mueve al mundo</p>
+                    <div class="card">
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno1.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno2.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno3.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno4.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno5.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno6.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno7.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno8.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno9.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno10.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno11.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        <div class="content-card">
+                            <div class="secciones">
+                                <a href="desayuno.html"><img src="media/Galerias/desayuno12.jpg" alt=""></a>
+                            </div>                      
+                        </div>
+                        
+                    </div>
+                    
+                </section>
+    
+            </main>
+    
+            <footer id="contacto">
+                <div class="footer contenedor">
+                    <div class="marca-logo">
+                        <img src="media/Galeria/logo_traidor.png">
+                    </div>
+                    <div class="iconos">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <p>la comida mueve al mudo entero</p>
+                </div>
+            </footer>
+    
+            <script type='text/javascript' src='{% static "js/jquerry.js" %}'></script>
+            <script type='text/javascript' src='{% static "js/main.js" %}'></script>     
+    </body>
+</html>
